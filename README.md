@@ -86,3 +86,12 @@ U8X8_SH1106_128X64_NONAME_HW_I2C lcd(A5,A4,U8X8_PIN_NONE);
 // SSD1306/1309 OLED
 //U8X8_SSD1306_128X64_NONAME_HW_I2C lcd(A5, A4, U8X8_PIN_NONE);
 ```
+## License
+
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+
+Credit to:
+
+* John Wagner - mrjohnwagner@gmail.com
+* 3DBeerGoggles -  www.youtube.com/@3dbeergoggles
+* Ian Evans - github.com/shampeon
