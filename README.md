@@ -37,39 +37,39 @@ The bias tester can, in principle, work to bias EL84 and other 9-pin power tubes
 The Nano, ADC, and OLED display all run on 5v DC, and the ADC and OLED communicate on the I2C bus. With I2C, multiple devices all communicate on the same bus, or wire, so there's only one connection to the Nano. You daisychain I2C devices in parallel on the data and clock wires. See the Adafruit
 
 Nano
-    A4 -> SDA (I2C data)
-    A5 -> SCL (I2C clock)
-    D5 -> button 1 (left)
-    D6 -> button 2 (right)
-    D7 -> button 3 (select)
-    VIN -> VDD/VCC
-    GND -> GND
+* A4 -> SDA (I2C data)
+* A5 -> SCL (I2C clock)
+* D5 -> button 1 (left)
+* D6 -> button 2 (right)
+* D7 -> button 3 (select)
+* VIN -> VDD/VCC
+* GND -> GND
 
 ADS1115
-    VDD -> VIN (5v DC)
-    GND -> GND
-    SDA -> SDA (I2C data)
-    SCL -> SCL (I2C clock)
-    A0 -> probe A voltage (red wire in Bias Scout)
-    A1 -> probe A current (white wire in Bias Scout)
-    A2 -> probe B voltage (red wire in Bias Scout)
-    A3 -> probe B current (white wire in Bias Scout)
+* VDD -> VIN (5v DC)
+* GND -> GND
+* SDA -> SDA (I2C data)
+* SCL -> SCL (I2C clock)
+* A0 -> probe A voltage (red wire in Bias Scout)
+* A1 -> probe A current (white wire in Bias Scout)
+* A2 -> probe B voltage (red wire in Bias Scout)
+* A3 -> probe B current (white wire in Bias Scout)
 
 OLED display
-    VCC -> VIN (5v DC)
-    GND -> GND
-    SDA -> SDA (I2C data)
-    SCL -> SCL (I2C clock)
+* VCC -> VIN (5v DC)
+* GND -> GND
+* SDA -> SDA (I2C data)
+* SCL -> SCL (I2C clock)
 
 Probe A
-    red plug -> probe A voltage socket
-    white plug -> probe A current socket
-    black plug -> probe A common socket
+* red plug -> probe A voltage socket
+* white plug -> probe A current socket
+* black plug -> probe A common socket
 
 Probe B
-    red plug -> probe B voltage socket
-    white plug -> probe B current socket
-    black plug -> probe B common socket
+* red plug -> probe B voltage socket
+* white plug -> probe B current socket
+* black plug -> probe B common socket
 
 ## Firmware
 
