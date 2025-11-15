@@ -2,8 +2,8 @@
 
 A bias tester for tube amplifiers with octal power tubes (e.g. 6L6, 6V6, EL34, 5881). The tester can monitor two tubes at once, allowing you to adjust the bias and while seeing the bias difference between the two tubes to see how well-matched they are.
 
-[!CAUTION]
-Tube amps have high voltage current that can kill you, even when turned off. If you are uncomfortable working with high voltage circuits or taking the risks inherent to working on tube amplifiers, find a qualified tech to work on your amp. Wiring the tester or probes incorrectly is extremely dangerous, and can expose you to lethal current. Always think about what you are doing when working on amplifier circuits, always drain the filter capacitors after powering off the amp, and exercise caution at all times. Use this tester at your own risk.
+> [!CAUTION]
+> Tube amps have high voltage current that can kill you, even when turned off. If you are uncomfortable working with high voltage circuits or taking the risks inherent to working on tube amplifiers, find a qualified tech to work on your amp. Wiring the tester or probes incorrectly is extremely dangerous, and can expose you to lethal current. Always think about what you are doing when working on amplifier circuits, always drain the filter capacitors after powering off the amp, and exercise caution at all times. Use this tester at your own risk.
 
 ## Hardware
 
