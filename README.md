@@ -34,7 +34,7 @@ The bias tester can, in principle, work to bias EL84 and other 9-pin power tubes
 
 ### Wiring the hardware
 
-The Nano, ADC, and OLED display all run on 5v DC, and the ADC and OLED communicate on the I2C bus. With I2C, multiple devices all communicate on the same bus, or wire, so there's only one connection to the Nano. You daisychain I2C devices in parallel on the data and clock wires. See the Adafruit
+The Nano, ADC, and OLED display all run on 5v DC, and the ADC and OLED communicate on the I2C bus. With I2C, multiple devices all communicate on the same bus, or wire, so there's only one connection to the Nano. You daisychain I2C devices in parallel on the data and clock wires. See the [Adafruit I2C documentation](https://docs.arduino.cc/learn/communication/wire/#introduction) for more info.
 
 Nano
 * A4 -> SDA (I2C data)
@@ -70,6 +70,8 @@ Probe B
 * red plug -> probe B voltage socket
 * white plug -> probe B current socket
 * black plug -> probe B common socket
+
+![Alt text](images/wiringDiagram.png?raw=true "Wiring diagram")
 
 ## Firmware
 
