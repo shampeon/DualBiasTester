@@ -16,6 +16,20 @@ The tester requires:
 * 6 banana sockets
 * 2 octal bias probes that connect to the plate and cathode of the socket under test ([TubeDepot's Bias Scout Kit](https://www.tubedepot.com/products/tubedepot-bias-scout-kit) or equivalent, see section below). Note that the [Hoffman Amps Bias Checker](https://el34world.com/charts/BiasChecker3.htm) will not work, as that probe does not monitor the plate voltage, only the cathode current.
 
+## How it works
+
+Each probe is connected to the amp's power tube sockets, and the power tubes are inserted into the probe. When the amp starts conducting, the probe reads the voltage from the socket and sends the plate and cathode voltage to the tester, which calculates and displays the plate voltage and dissipation in mA and watts to the display.
+
+### Plate voltage
+
+The probe has a voltage divider with a 1M and 100 ohm resistor, which reduces the plate voltage from, for example, 450VDC to 45.0mV on the output of the divider, making it safe to send to the tester. This small voltage is input to the ADS1115 ADC, and the output value is sent over the I2C bus to the Nano as a 16 bit integer. This value is multiplied by a step value per bit to convert back to the original plate voltage at the socket.
+
+### Dissipation
+
+The probe uses a 1 ohm shunt resistor between the cathode pin in the socket and the probe. The ADS1115 ADC reads the voltage across the shunt resistor from the common and cathode wires, which represents the cathode current. A reading of 50mV across the resistor means there is 50mA of current flowing through the cathode. This value includes the screen current, so the tester has the option of subtracting the estimated screen current (5.5% of the raw reading) when displaying the dissipation.
+
+To show the raw values without subtracting the screen current, you can select `RAW no Ig2` as the tube type when biasing, or define a new tube in the code with the screen current disabled.
+
 ### DIY probes
 
 The TubeDepot Bias Scout kit has everything you need, and is inexpensive at around $40 for two probes. If you want to make your own bias probe, for each probe you will need:
