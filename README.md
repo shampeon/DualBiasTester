@@ -48,7 +48,7 @@ To show the raw values without subtracting the screen current, you can select `R
 
 The bias tester can, in principle, work to bias EL84 and other 9-pin power tubes. It just requires building a probe with the correct inputs for 9-pin tubes. 9-pin power tubes do not use the same pin arrangement as octal power tubes. That means creating a new nonal socket probe, or an adapter for an octal probe. Any nonal probe or adapter must connect to the correct voltage and current input jack and socket pins using the same component values and wiring as the octal probe.
 
-### Wiring the hardware
+## Wiring the hardware
 
 The Nano, ADC, and OLED display all run on 5v DC, and the ADC and OLED communicate on the I2C bus. With I2C, multiple devices all communicate on the same bus, or wire, so there's only one connection to the Nano. You daisychain I2C devices in parallel on the data and clock wires. See the [Adafruit I2C documentation](https://docs.arduino.cc/learn/communication/wire/#introduction) for more info.
 
