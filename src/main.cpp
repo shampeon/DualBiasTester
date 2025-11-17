@@ -1,4 +1,4 @@
-// Ver15: 2025-11-13 Updated to latest libraries, added SSD1306 128x64 display, converted to cpp
+// Ver15: 2025-11-15 Updated to latest libraries, added SSD1306 128x64 display, converted to cpp, changed font and display spacing
 
 // Ver14: Implemented option for tubes that don't use screen grids to disable 5.5% grid calculation, added "Debug" tube to check direct measurement.
 // Ver13: Removed unneeded commented-out code sections
