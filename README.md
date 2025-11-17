@@ -16,6 +16,18 @@ The tester requires:
 * 6 banana sockets
 * 2 octal bias probes that connect to the plate and cathode of the socket under test ([TubeDepot's Bias Scout Kit](https://www.tubedepot.com/products/tubedepot-bias-scout-kit) or equivalent, see section below). Note that the [Hoffman Amps Bias Checker](https://el34world.com/charts/BiasChecker3.htm) will not work, as that probe does not monitor the plate voltage, only the cathode current.
 
+### DIY probes
+
+The TubeDepot Bias Scout kit has everything you need, and is inexpensive at around $40 for two probes. If you want to make your own bias probe, for each probe you will need:
+
+* 1 octal tube base (e.g. [P-SP8-47X from Amplified Parts](https://www.amplifiedparts.com/products/tube-base-8-pin-octal-125-diameter))
+* 1 octal PCB socket (e.g. [P-ST8-810-PCL from Amplified Parts](https://www.amplifiedparts.com/products/socket-8-pin-octal-phenolic-pc-mount-long-lead))
+* 1 1M 1/2 watt or greater 1% resistor
+* 1 100 ohm 1/8 watt or greater 1% resistor
+* 1 1 ohm 2 watt or greater 5% resistor
+* 1 3 conductor wire
+* 3 banana plugs
+
 ## How it works
 
 Each probe is connected to the amp's power tube sockets, and the power tubes are inserted into the probe. When the amp starts conducting, the probe reads the voltage from the socket and sends the plate and cathode voltage to the tester, which calculates and displays the plate voltage and dissipation in mA and watts to the display.
@@ -30,17 +42,7 @@ The probe uses a 1 ohm shunt resistor between the cathode pin in the socket and 
 
 To show the raw values without subtracting the screen current, you can select `RAW no Ig2` as the tube type when biasing, or define a new tube in the code with the screen current disabled.
 
-### DIY probes
 
-The TubeDepot Bias Scout kit has everything you need, and is inexpensive at around $40 for two probes. If you want to make your own bias probe, for each probe you will need:
-
-* 1 octal tube base (e.g. [P-SP8-47X from Amplified Parts](https://www.amplifiedparts.com/products/tube-base-8-pin-octal-125-diameter))
-* 1 octal PCB socket (e.g. [P-ST8-810-PCL from Amplified Parts](https://www.amplifiedparts.com/products/socket-8-pin-octal-phenolic-pc-mount-long-lead))
-* 1 1M 1/2 watt or greater 1% resistor
-* 1 100 ohm 1/8 watt or greater 1% resistor
-* 1 1 ohm 2 watt or greater 5% resistor
-* 1 3 conductor wire
-* 3 banana plugs
 
 ### Adapting for 9-pin tubes
 
